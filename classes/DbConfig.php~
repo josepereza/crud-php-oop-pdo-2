@@ -1,0 +1,23 @@
+<?php
+class DbConfig 
+{	
+	private $_host = 'localhost';
+	private $_username = 'root';
+	private $_password = '3266root';
+	private $_database = 'test';
+	
+	protected $connection;
+	
+	public function __construct()
+	{
+		if (!isset($this->connection)) {
+			
+			$this->connection = new PDO("mysql:host=localhost;dbname=test","root","3266root" );
+			
+			
+		}	
+		
+		return $this->connection;
+	}
+}
+?>

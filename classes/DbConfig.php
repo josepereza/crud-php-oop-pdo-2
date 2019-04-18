@@ -8,7 +8,7 @@ class DbConfig
 	{
 		if (!isset($this->connection)) {
 			
-			$this->connection = new PDO("mysql:host=localhost;dbname=test","root","3266root" );
+			$this->connection = new PDO("mysql:host=localhost;dbname=test","root","12345Seis" );
 			
 			
 		}	
